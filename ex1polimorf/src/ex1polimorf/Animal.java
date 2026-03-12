@@ -37,8 +37,8 @@ public class Animal {
             this. peso=peso;
             
         }
-        public void getpeso(){
-            this.peso=peso;           
+        public double getpeso(){
+            return peso;           
         }
         void emitirSom(){
             System.out.println("O animal faz barulho.");
