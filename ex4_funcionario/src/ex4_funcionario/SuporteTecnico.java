@@ -9,6 +9,15 @@ package ex4_funcionario;
  *
  * @author crisf
  */
-public class SuporteTecnico {
+public class SuporteTecnico extends Funcionario {
+
+    public SuporteTecnico(String nome, String setor, double salário) {
+        super(nome, setor, salário);
+    }
+
     
+    @Override
+    public void trabalhar(){
+          System.out.println("O suporte técnico está resolvendo problemas dos usuários");
+    }
 }

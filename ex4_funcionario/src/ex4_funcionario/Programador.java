@@ -9,6 +9,16 @@ package ex4_funcionario;
  *
  * @author crisf
  */
-public class Programador {
+public class Programador extends Funcionario {
+
+    public Programador(String nome, String setor, double salário) {
+        super(nome, setor, salário);
+    }
+
+   
     
+    @Override
+    public void trabalhar(){
+          System.out.println("O programador está desenvolvendo sistemas e escrevendo código");
+    }
 }

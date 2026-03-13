@@ -9,6 +9,14 @@ package ex4_funcionario;
  *
  * @author crisf
  */
-public class Gerente {
+public class Gerente extends Funcionario {
+    
+    public Gerente(String nome, String setor, double salário) {
+        super(nome, setor, salário);
+    }
+    @Override
+    public void trabalhar(){
+        System.out.println("O gerente está coordenando a equipe");
+    }
     
 }

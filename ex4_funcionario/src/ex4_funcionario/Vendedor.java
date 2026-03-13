@@ -9,6 +9,15 @@ package ex4_funcionario;
  *
  * @author crisf
  */
-public class Vendedor {
-    
+public class Vendedor extends Funcionario {
+
+    public Vendedor(String nome, String setor, double salário) {
+        super(nome, setor, salário);
+    }
+
+   
+    @Override
+    public void trabalhar(){
+          System.out.println("O vendedor está atendendo clientes e realizando vendas");
+    }
 }

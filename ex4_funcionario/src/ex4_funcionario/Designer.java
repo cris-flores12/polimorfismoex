@@ -9,6 +9,16 @@ package ex4_funcionario;
  *
  * @author crisf
  */
-public class Designer {
-    
+public class Designer extends Funcionario {
+
+    public Designer (String nome, String setor, double salário) {
+        super(nome, setor, salário);
+    }
+
+ 
+   
+    @Override
+    public void trabalhar(){
+          System.out.println("O designer está criando layouts e artes visuais");
+    }
 }
