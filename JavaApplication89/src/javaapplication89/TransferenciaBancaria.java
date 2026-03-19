@@ -3,19 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ex5_pagamento;
+package javaapplication89;
 
 /**
  *
  * @author crisf
  */
-public class Ex5_pagamento {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-       
-    }
+public class TransferenciaBancaria {
     
 }
