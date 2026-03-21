@@ -9,6 +9,13 @@ package javaapplication89;
  *
  * @author crisf
  */
-public class TransferenciaBancaria {
-    
+class TransferenciaBancaria extends Pagamento {
+    public TransferenciaBancaria(double valor, String data, String descricao) {
+        super(valor, data, descricao);
+    }
+
+    @Override
+    public void processarPagamento() {
+        System.out.println("Pagamento por Transferência Bancária concluído: R$" + getValor());
+    }
 }

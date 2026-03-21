@@ -9,6 +9,13 @@ package javaapplication89;
  *
  * @author crisf
  */
-public class Boleto {
-    
+class Boleto extends Pagamento {
+    public Boleto(double valor, String data, String descricao) {
+        super(valor, data, descricao);
+    }
+
+    @Override
+    public void processarPagamento() {
+        System.out.println("Pagamento via Boleto registrado: R$" + getValor());
+    }
 }

@@ -9,6 +9,13 @@ package javaapplication89;
  *
  * @author crisf
  */
-public class Dinheiro {
-    
+class Dinheiro extends Pagamento {
+    public Dinheiro(double valor, String data, String descricao) {
+        super(valor, data, descricao);
+    }
+
+    @Override
+    public void processarPagamento() {
+        System.out.println("Pagamento em Dinheiro recebido: R$" + getValor());
+    }
 }

@@ -9,6 +9,13 @@ package javaapplication89;
  *
  * @author crisf
  */
-public class CartaoCredito {
-    
+class CartaoCredito extends Pagamento {
+    public CartaoCredito(double valor, String data, String descricao) {
+        super(valor, data, descricao);
+    }
+
+    @Override
+    public void processarPagamento() {
+        System.out.println("Pagamento com Cartão de Crédito aprovado: R$" + getValor());
+    }
 }
